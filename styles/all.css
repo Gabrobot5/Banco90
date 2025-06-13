@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos da Navbar */
+/* Navbar */
 .navbar {
     padding: 0.8rem 1rem;
 }
@@ -43,10 +43,10 @@
 
 /* Banner - Container principal */
 #banner {
-    position: relative; /* Necessário para posicionamento absoluto dos filhos */
+    position: relative; 
     margin-top: 1.5rem;
     width: 100%;
-    height: 600px; /* Altura fixa ou use vh para responsivo */
+    height: 600px; 
     overflow: hidden;
 }
 
@@ -57,25 +57,23 @@
     object-fit: cover;
 }
 
-/* Caixa sobreposta - versão alinhada à esquerda */
 #caixa {
     position: absolute;
-    width: 600px; /* Largura ajustável */
+    width: 600px;
     background-color: rgba(175, 158, 5, 0.705);
     color: white;
     padding: 25px;
     border-radius: 8px;
     
-    /* Posicionamento à esquerda */
-    left: 1px; /* Distância da borda esquerda */
-    top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente */
     
-    /* Efeitos visuais */
+    left: 1px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    
+    
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajuste para telas menores */
 @media (max-width: 768px) {
     #caixa {
         width: 80%;
@@ -108,12 +106,12 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Espaço entre os itens */
-    flex-wrap: wrap; /* Para responsividade */
+    gap: 2rem; 
+    flex-wrap: wrap; 
 }
 
 .forma {
-    width: 200px; /* Largura fixa ou use porcentagem */
+    width: 200px; 
     padding: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -191,7 +189,7 @@
     }
     
     #imageCartao {
-        height: 300px; /* Altura fixa para mobile */
+        height: 300px; 
     }
 }
 
@@ -220,7 +218,7 @@
 }
 
 .clientManeiras {
-    width: 30%; /* Ajuste conforme necessário */
+    width: 30%; 
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -241,6 +239,12 @@
     height: 299px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+.shadow-table {
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 /* Responsividade */
@@ -267,7 +271,7 @@
     }
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .formas-container {
         width: 95%;
